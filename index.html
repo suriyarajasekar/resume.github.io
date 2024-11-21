@@ -1,40 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Resume Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuriyaRajasekar -Full Stack Developer</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #f3f4f6;
+            color: #333;
         }
+
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+
         .container {
-            padding: 20px;
+            max-width: 1100px;
+            margin: 30px auto;
             background: white;
-            margin: 20px auto;
-            border-radius: 8px;
-            max-width: 800px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2575fc;
+            font-size: 2em;
+            border-bottom: 3px solid #6a11cb;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            line-height: 1.6;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            background: #f4f6fc;
+            padding: 15px;
+            border-left: 4px solid #2575fc;
+            border-radius: 5px;
+        }
+
+        ul li span {
+            font-weight: bold;
+            color: #6a11cb;
+        }
+
+        a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #6a11cb;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2575fc;
+        }
+
+        footer {
+            text-align: center;
+            background: #6a11cb;
+            color: white;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p, ul li {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>My Portfolio</h1>
-        <p>Welcome to my resume portfolio!</p>
+
+<header>
+    <h1>Full Stack Developer</h1>
+    <p>Dedicated | Skilled | Versatile</p>
+</header>
+
+<div class="container">
+    <section id="about">
         <h2>About Me</h2>
-        <p>Brief description about yourself.</p>
+        <p>
+            I am a seasoned Full Stack Developer with over 2.6 years of professional experience in building dynamic and scalable web applications. I specialize in designing efficient solutions that bridge user needs with cutting-edge technology. I am passionate about innovation and problem-solving, and I thrive in collaborative environments.
+        </p>
+    </section>
+
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
+            <li><span>Frontend:</span> React, Angular, Ionic, HTML5, CSS3</li>
+            <li><span>Backend:</span> Node.js, Flask, PHP, Express</li>
+            <li><span>APIs:</span> RESTful, SOAP, GraphQL, SAP API</li>
+            <li><span>Databases:</span> MongoDB, MySQL, PostgreSQL</li>
+            <li><span>Cloud & Tools:</span> Docker, GCP, AWS</li>
+            <li><span>Others:</span> Python API development, SQL query optimization, Basic .NET Framework</li>
+            <li><span>Version Control:</span> Git, BitBucket</li>
+            <li><span>Project Tracking:</span> JIRA</li>
         </ul>
+    </section>
+
+    <section id="projects">
         <h2>Projects</h2>
-        <p>Highlight some of your key projects with links to repositories.</p>
-        <a href="https://github.com/username/project1">Project 1</a>
-    </div>
+        <ul>
+            <li>
+                <span>OCR Demo Project:</span> Implemented a Python-Node.js-based OCR solution for real-time text extraction.
+            </li>
+            <li>
+                <span>Customer Portal:</span> Built a scalable Angular portal to manage client interactions and enhance customer satisfaction.
+            </li>
+            <li>
+                <span>Planner:</span> Developed a dynamic task management tool with advanced visualization and updates.
+            </li>
+            <li>
+                <span>Taxi Booking Admin Panel:</span> Streamlined taxi bookings for efficient transportation management.
+            </li>
+            <li>
+                <span>Food Delivery System:</span> Designed a web app to optimize food delivery and order management.
+            </li>
+            <li>
+                <span>Enterprise Resource Planning:</span> Built an ERP system for business efficiency and automation.
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            Let's connect and explore opportunities! Reach out via:
+        </p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p><a href="#about" class="btn">Back to Top</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Full Stack Developer Portfolio. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
